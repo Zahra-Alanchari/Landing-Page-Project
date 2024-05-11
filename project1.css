@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    Font-size: 18px;
+}
+body{
+    direction: ltr;
+    font-family: 'Rubik';
+}
+p{
+    color: hsl(229, 8%, 60%);
+    margin-top: 10px;
+}
+nav{
+    position: relative;
+    margin: 0 auto;
+    height: 200px;
+}
+footer{
+    margin-top: 20px;
+    background-color: hsl(229, 31%, 21%);
+}
+#box{
+    background-color: hsl(231, 69%, 60%);
+    float: right;
+    display: block;
+    clear: both;
+    flex-direction: row;
+    align-self: flex-start;
+    flex-basis:300px ;
+    width: 300px;
+    height: 200px;
+    border-radius: 80px 0px 0px 80px;
+    margin-top: 100px;
+    position: relative;
+}
+#wrapper2{
+    width: 100%;
+
+}
+#wrapper2::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#manager img{
+    height: 240px;
+    position: absolute;
+    right: 45px;
+    top: -50px;
+    
+}
+#content{
+    display: block;
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+#content h1{
+    font-size: 2rem;
+}
+#btn button{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#btn-chrome{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+#btn-chrome:hover{
+    background-color: white;
+    box-shadow: 0 3px  3px  rgb(228, 225, 225);
+    color:hsl(231, 69%, 60%) ;
+    border: 1px solid hsl(231, 69%, 60%);
+
+}
+#btn-firefox{
+    background-color: white;
+    box-shadow: 0 3px  3px  rgb(228, 225, 225);
+}
+
+#btn-firefox:hover{
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+#manager::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+#feature{
+    margin-top: 90px;
+}
+#feature h3 , #content-feature h3 , #download-content h3 , #question-content h3{
+    font-size: 1.5rem;
+}
+#feature #feature-content{
+    width: 360px;
+    text-align: center;
+    margin: 0 auto;
+}
+#feature-nav{
+    margin-top: 20px;
+}
+#feature-nav-list{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#feature-nav-list li{
+    list-style-type: none;
+    border-bottom: 1px solid gray;
+    width: 350px;
+    margin: 0 auto;
+}
+#feature-nav-list li:first-child{
+    border-top: 1px solid gray;
+
+}
+#feature-nav-list li button{
+    height: 35px;
+    cursor: pointer;
+    background-color: white;
+    color: hsl(229, 8%, 60%);
+}
+#feature-nav-list li button:hover{
+    color: hsl(0, 94%, 66%);
+}  
+.selected{
+    border-bottom: 2px solid hsl(0, 94%, 66%);
+    color: black !important
+    
+}
+#box-feature{
+    background-color: hsl(231, 69%, 60%);
+    width: 250px;
+    height: 200px;
+    border-radius: 0px 80px 80px 0px;
+    float: left;
+    margin-top: 100px;
+    position: relative;
+}
+#box-feature img{
+    height: 200px;
+    position: absolute;
+    left: 45px;
+    top: -40px;
+}
+#content-feature{
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+#btn-feature button{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 15px;
+}
+.hidden{
+    display: none;
+}
+
+#feature::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+#download{
+    margin-top: 90px;
+}
+#download-content{
+    width: 340px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#posts{
+    margin: 20px;
+}
+
+#chrome , #firefox, #opera{
+    width: 235px;
+    height: 250px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 2px  2px 2px rgb(238, 234, 234);
+    align-items: center;
+    
+    
+
+}
+#download #posts p{
+    font-size:.9rem ;
+}
+#download #posts h5{
+    font-size:1.2rem ;
+}
+
+#download button{
+    font-size: .9rem;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    background-color:hsl(231, 69%, 60%);
+}
+#download button:hover{
+    background-color: white;
+    border: 1px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+    box-shadow: 1px 1px 3px rgb(225, 225, 225);
+}
+#download::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+#question-content{
+    width: 340px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+#question ul{
+    
+    width: 353px;
+    margin: 0 auto;
+    margin-top: 40px;
+    list-style-type: none;
+    border-top: 1px solid black;
+}
+#question ul li{
+    padding: 15px 0;
+}
+.left:hover{
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+.left{
+    border-bottom: 1px solid black;
+}
+#question .right{
+    float: right;
+}
+
+
+.down {
+    margin: 10px 0;
+    text-align: start;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+#btn-question button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+}
+#footer1{
+    background-color:hsl(231, 69%, 60%) ;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#footer1 h4{
+    font-size: 1rem;
+    margin-top: 50px;
+    letter-spacing: 10px;
+}
+#footer1 h1{
+    margin: 20px 20px;
+    font-size: 1.5rem;
+}
+#footer1 input{
+    display: block;
+    width: 308px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    
+    
+    
+}
+#footer1 button{
+    width: 350px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+#footer1 button:hover{
+    background-color: white;
+    border: 1px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+#emailbox{
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+#emailbox input{
+    margin: 1px 0 1px 1px;
+    
+}
+.backColor{
+    background-color: hsl(0, 94%, 66%);
+}
+#emailbox img{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+.results{
+    color: white;
+    
+}
+#footer2{
+    color: white;
+    text-align: center;
+    margin: 30px;
+
+}
+#footer2 ul li{
+    margin: 20px;
+}
+#footer2 ul li:hover{
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+#facebook{
+    padding-left: 20px;
+}
+#login{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    height: 30px;
+}
+#login-nav{
+    display: none;
+}
+.show{
+    display: none;
+}
+
+.hamburger{
+    background-color: hsla(229, 31%, 21%, 0.85);
+
+    float: right;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+#burgur-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    margin: 0 10px;
+    height: 20px;
+    cursor: pointer;
+}
+#burgur-list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+}
+#burgur-list li{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding: 20px;
+    border-top: 1px solid rgb(193, 190, 190);
+    cursor: pointer;
+}
+#burgur-list li:hover{
+    color:hsl(0, 94%, 66%); ;
+}
+#burgur-list li button{
+    display: inline-block;
+    width: 350px;
+    height: 40px;
+    border:1px solid white ;
+    background-color: hsl(229, 31%, 21%);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#burgur-list li button:hover{
+    background-color: white;
+    color: black;
+}
+#burgur-social{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.filter{
+    filter: invert(27%) sepia(94%) saturate(7486%) hue-rotate(356deg) brightness(101%) contrast(104%);
+    rotate: 180deg;
+}
+
+
+@media screen and (min-width:768px) {
+    .hamburger{
+        display: none;
+    }
+    #login{
+        display: none;
+    }
+    #login-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        margin: 0 20px;
+    }
+    #login-nav img{
+        height: 30px;
+    }
+    #login-nav ul li{
+        display: inline-block;
+        margin: 20px;
+    }
+    #login-nav ul li:hover{
+        color:hsl(0, 94%, 66%) ;
+        cursor: pointer;
+    }
+    #login-nav ul li button{
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: hsl(0, 94%, 66%) ;
+        color: white;
+        cursor: pointer;
+    }
+    #login-nav ul li button:hover{
+        background-color: white;
+        color:hsl(0, 94%, 66%) ;
+        border: 1px solid hsl(0, 94%, 66%);
+    }
+    
+    #manager{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+
+    }
+    #box{
+        background-color: hsl(231, 69%, 60%);
+        width: 300px;
+        height: 200px;
+        border-radius: 80px 0px 0px 80px;
+        margin-top: 100px;
+        position: relative;
+    }
+    #manager img{
+        height: 250px;
+        position: absolute;
+        right: 80px;
+        top: -50px;
+        
+    }
+    #wrapper2{
+        width: 410px;
+    }
+    #content{
+        width: 340px;
+        margin-left: 10px;
+        text-align: start;
+    }
+
+    #feature-nav-list{
+        text-align: center;
+        width: 540px;
+        margin: 0 auto;
+        border-bottom: 1px solid gray;
+        
+    }
+    #feature-nav-list li{
+        margin: 15px;
+        display: inline;
+    }
+    #feature{
+        margin-top: 250px;
+    }
+    #box-feature{
+        background-color: hsl(231, 69%, 60%);
+        width: 300px;
+        height: 200px;
+        border-radius: 0px 80px 80px 0px;
+        float: left;
+        margin-top: 100px;
+        position: relative;
+    }
+    #box-feature img{
+        height: 220px;
+        position: absolute;
+        left: 80px;
+        top: -50px;
+    }
+    #content-feature{
+        width: 290px;
+        margin: 2px;
+        margin-right: 20px;
+        float: right;
+        text-align: start;
+        
+    }
+    #wrapper2::after{
+        display: inline-block;
+    }
+    #download{
+        margin-top: 150px;
+    }
+    #download-content{
+        width: 370px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #download-content p{
+        margin-top: 10px;
+    }
+    #posts{
+        display: flex;
+        align-self: center;
+        width: 700px;
+        margin:30px auto;
+    }
+    #posts button{
+        width: 180px;
+    }
+
+    #chrome , #firefox, #opera{
+        width: 250px;
+        height: 250px;
+        margin-left: 30px;
+        background-color: white;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 4px;
+        box-shadow: 0 2px  2px 2px rgb(238, 234, 234);
+        align-items: center;
+    }
+    #firefox{
+        position: relative;
+        top: 20px;
+    }
+    #opera{
+        position: relative;
+        top: 40px;
+    }
+    .social{
+        height: 50px;
+    }
+    .dott{
+        width: 200px;
+    }
+    #question-content{
+        width:400px;
+    }
+    #footer1{
+    display: block;
+}
+    #footer1 h4{
+        padding-top:60px ;
+    }
+
+    #footer1 button{
+        width: 150px;
+        vertical-align: top;
+    }
+    #emailbox{
+        display: inline-block;
+        margin: 10px
+    }
+    #footer2{
+        background-color: hsl(229, 31%, 21%);
+        height: 50px;
+        display: flex;
+        margin: 20px 60px;
+    }
+    #footer2 ul li{
+        margin: 10px;
+        display: inline-block;
+    }
+    
+    #facebook{
+        padding-left: 10px;
+    }
+    #footer-logo{
+        margin-left: auto;
+        margin-top: 5px;
+    }
+          
+}
+@media screen and (min-width:950px) {
+    #content{
+        width: 370px;
+        margin-left: 100px;
+        text-align: start;
+    }
+    #content-feature{
+        margin-right: 100px; 
+    }
+    #login{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1124px) {
+    #box{
+        width: 400px;
+        height: 250px;
+    }
+    #login{
+        display: none;
+    }
+    #manager img{
+        height: 300px;
+    }
+    #content{
+        width: 400px;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+    #box-feature{
+        width: 400px;
+        height: 250px;
+    }
+    #box-feature img{
+        height: 260px;
+    }
+    #content-feature{
+        width: 400px;
+        
+    }
+    #login-nav{
+        margin: 0 100px;
+    }
+    #content-feature{
+        width: 280px;
+        margin-right: 300px;
+        padding-top: 100px;
+        float: right;
+        text-align: start;
+        
+    }
+    
+}
